@@ -55,7 +55,7 @@ Este projeto pode ser publicado pelo GitHub Pages.
 Depois de ativar o GitHub Pages, o link ficará parecido com:
 
 ```bash
-https://seuusuario.github.io/parquimetro-virtual-premium/
+https://seuusuario.github.io/parquimetro-virtual-premium/](https://izadantasnunes.github.io/parquimetro-virtual-premium
 ```
 
 ## 👩‍💻 Autora
