@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ParkPay | Parquímetro Virtual</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <aside class="brand-panel">
+      <div class="brand-content">
+        <div class="logo">
+          <div class="logo-mark">P</div>
+          <div>
+            <strong>ParkPay</strong>
+            <span>Parquímetro virtual</span>
+          </div>
+        </div>
+
+        <span class="tag">Sistema inteligente de permanência</span>
+        <h1>Estacione com controle.</h1>
+        <p>Informe o valor pago e calcule automaticamente o tempo liberado e o troco disponível, com uma interface simples, moderna e objetiva.</p>
+      </div>
+
+      <div class="brand-footer">
+        <div class="mini-stat">
+          <strong>30min</strong>
+          <span>a partir de R$ 1,00</span>
+        </div>
+        <div class="mini-stat">
+          <strong>120min</strong>
+          <span>tempo máximo</span>
+        </div>
+        <div class="mini-stat">
+          <strong>POO</strong>
+          <span>JavaScript ES6</span>
+        </div>
+      </div>
+    </aside>
+
+    <section class="calculator-panel">
+      <div class="topbar">
+        <div>
+          <h2>Calcular permanência</h2>
+          <p>Escolha um valor e veja o tempo permitido.</p>
+        </div>
+        <span class="status-pill"><span class="status-dot"></span> Online</span>
+      </div>
+
+      <section class="price-grid" aria-label="Tabela de preços">
+        <article class="price-card">
+          <span>Plano básico</span>
+          <strong>R$ 1,00</strong>
+          <p>30 minutos</p>
+        </article>
+        <article class="price-card">
+          <span>Plano médio</span>
+          <strong>R$ 1,75</strong>
+          <p>60 minutos</p>
+        </article>
+        <article class="price-card featured">
+          <span>Plano completo</span>
+          <strong>R$ 3,00</strong>
+          <p>120 minutos</p>
+        </article>
+      </section>
+
+      <section class="payment-card">
+        <label for="valor">Valor inserido</label>
+        <div class="input-group">
+          <span class="currency">R$</span>
+          <input type="number" id="valor" placeholder="3,00" min="0" step="0.01" />
+        </div>
+
+        <button id="calcular">Calcular tempo e troco</button>
+        <p id="resultado" class="resultado">Digite um valor para iniciar a simulação.</p>
+
+        <div class="hint-row">
+          <span>● Mínimo R$ 1,00</span>
+          <span>● Máximo 120 min</span>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
